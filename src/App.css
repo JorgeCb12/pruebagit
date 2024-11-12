@@ -9,24 +9,9 @@ body {
   padding: 0;
   height: 100vh;
   color: #fff;
-  background: linear-gradient(45deg, rgb(31, 29, 43), rgb(78, 21, 133), rgb(105, 44, 110), rgb(82, 43, 119));
+  background-color: #1F1D2B;
   background-size: 400% 400%;
   position: relative;
-  animation: cambiar 10s ease-in infinite;
-}
-
-@keyframes cambiar {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
 }
 
 .header {
@@ -42,12 +27,14 @@ body {
   height: 22px;
   width: 134px;
   flex: 1;
+  margin-left: 100px;
 }
 
 nav {
   flex: 2;
   text-align: center;
-  margin-left: -30%;
+  margin-left: -20%;
+
 }
 
 nav ul {
@@ -63,7 +50,7 @@ nav ul {
 nav ul li {
   margin: 0 20px;
   cursor: pointer;
-  background: linear-gradient(45deg, rgb(108, 109, 129), rgb(220, 183, 255), rgb(152, 159, 255), rgb(196, 155, 235));
+  background: linear-gradient(45deg, rgb(108, 109, 129), rgb(255, 183, 183), rgb(152, 159, 255), rgb(196, 155, 235));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 5px;
@@ -85,6 +72,7 @@ nav ul li:hover {
 .buttons {
   flex: 1;
   text-align: right;
+  
 }
 
 .btn-create {
@@ -97,10 +85,11 @@ nav ul li:hover {
   background-color: transparent;
   color: #fff;
   font-weight: bold;
-  box-shadow: 0 0 5px 0 #fff;
+  box-shadow: 0 0 2px 0 #fff;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-style: normal;
+  
 }
 
 .btn-login {
@@ -112,6 +101,7 @@ nav ul li:hover {
   color: #fff;
   font-weight: bold;
   border: none;
+  margin-right: 110px;
 }
 
 .main-section {
@@ -129,6 +119,10 @@ nav ul li:hover {
   font-size: 2.1rem;
   margin-left: 100px;
 
+}
+h1 {
+  letter-spacing: none;
+  line-height: normal;
 
 }
 
@@ -206,7 +200,8 @@ h6 {
    margin-top: -5px;
    font-weight: 400;
    line-height: 24px;
-   margin-left: 120px;
+   margin-left: 1%;
+   margin-top: 5px;
 }
 .icon-content{
   display: flex;
@@ -220,13 +215,32 @@ h6 {
 .icon-content img {
   padding: 10px 50px;
   margin-left: 60px;
+  background-color: #FB37FF;
   
 }
 .icon img {
   width: 170px;
   border-radius: 20px;
-  
+  background: transparent;
 
+}
+hr {
+  margin-top: -20px;
+}
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   margin-left: 15%;
+  margin-top: -10px;
+  text-align: center;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 

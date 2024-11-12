@@ -49,36 +49,41 @@ function App() {
        <div className="card-box">
          <img src={img1} alt="logo" />
          <h6>Lorem Ipsum</h6>
+         <hr></hr>
        </div>
        <div className="card-box">
          <img src={img2} alt="logo" />
          <h6>Dolor sit amet</h6>
+         <hr></hr>
        </div>
        <div className="card-box">
          <img src={img3} alt="logo" />
          <h6>Dignissim curabitu..</h6>
+         <hr></hr>
        </div>
        <div className="card-box">
          <img src={img4} alt="logo" />
-         <h6>Dignissim curabitu..</h6>
+         <h6>Amet pellentesq..</h6>
+         <hr></hr>
        </div>
        </div>
+       <h2>Getting started</h2>
        <div className="icon-content">
         <div className="icon">
         <img src={icon1} alt="logo" />
-        <h6>Dignissim curabitu..</h6>
+        <h5>Connect your wallet</h5>
         </div>
         <div className="icon">
         <img src={icon2} alt="logo" />
-        <h6>Dignissim curabitu..</h6>
+        <h5>Posuere urna, sit amet <br />molestie leo</h5>
         </div>
         <div className="icon">
         <img src={icon3} alt="logo" />
-        <h6>Dignissim curabitu..</h6>
+        <h5>Semper pretium <br />libero sed quam <br />ac integer ut</h5>
         </div>
         <div className="icon">
         <img src={icon4} alt="logo" />
-        <h6>Dignissim curabitu..</h6>
+        <h5>Lectus volutpat magna <br /> vitae in arcu</h5>
         </div>
        </div>
     </> 
