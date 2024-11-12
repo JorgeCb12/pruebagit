@@ -1,35 +1,88 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import logo from './assets/Gaslur.png';
+import home from './assets/unsplash_OG44d93iNJk.png';
+import img1 from './assets/unsplash_ruJm3dBXCqw.png';
+import img2 from './assets/unsplash_9XngoIpxcEo.png';
+import img3 from './assets/unsplash_7pQszt9KiEY.png';
+import img4 from './assets/unsplash_wN9DU73b8_s.png';
+import icon1 from './assets/Group 1268.png';
+import icon2 from './assets/Group 1269.png';
+import icon3 from './assets/Group 1270.png';
+import icon4 from './assets/Group 1271.png';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <header className='header'>
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <nav className="menu">
+          <ul>
+            <li><a href="#"></a>HOME</li>
+            <li><a href="#"></a>MY PROFILE</li>
+            <li><a href="#"></a>ACTIVITY</li>
+            <li><a href="#"></a>HOW IT WORKS</li>
+            </ul>
+        </nav>
+        <div className="botones">
+          <button className="btn-create">CREATE</button>
+          <button className="btn-login">SING IN</button>
+        </div>
+      </header>
+      <div className="main-section">
+        <div className="text-content">
+       <h1>Discover, collect,  <br/> and charity in <br/> extraordinary NFT <br/> marketplace</h1>
+       <p>In aenean posuere lorem risus nec. Tempor <br/> tincidunt aenean purus purus vestibulum nibh mi <br/>  venenatis</p>
+       <div className="botones">
+          <button className="btn-explore">EXPLORE</button>
+          <button className="btn-create2">CREATE</button>
+        </div>
+       </div>  
+       <div className="image-content">
+       <img src={home} alt="ome" />
+       </div>
+       </div>
+       <div className="contend-card">
+        
+       <div className="card-box">
+         <img src={img1} alt="logo" />
+         <h6>Lorem Ipsum</h6>
+       </div>
+       <div className="card-box">
+         <img src={img2} alt="logo" />
+         <h6>Dolor sit amet</h6>
+       </div>
+       <div className="card-box">
+         <img src={img3} alt="logo" />
+         <h6>Dignissim curabitu..</h6>
+       </div>
+       <div className="card-box">
+         <img src={img4} alt="logo" />
+         <h6>Dignissim curabitu..</h6>
+       </div>
+       </div>
+       <div className="icon-content">
+        <div className="icon">
+        <img src={icon1} alt="logo" />
+        <h6>Dignissim curabitu..</h6>
+        </div>
+        <div className="icon">
+        <img src={icon2} alt="logo" />
+        <h6>Dignissim curabitu..</h6>
+        </div>
+        <div className="icon">
+        <img src={icon3} alt="logo" />
+        <h6>Dignissim curabitu..</h6>
+        </div>
+        <div className="icon">
+        <img src={icon4} alt="logo" />
+        <h6>Dignissim curabitu..</h6>
+        </div>
+       </div>
+    </> 
+  );
 }
 
-export default App
+export default App;
