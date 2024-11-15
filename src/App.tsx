@@ -3,25 +3,25 @@ import './App.css';
 import Home from './pages/Home';
 import Myprofile from './pages/Myprofile';
 import Activity from './pages/Activity';
-import Header from './components/header';
-import Footer from './components/Footer';
 import Explore from './pages/Explore';
 import Create from './pages/Create';
+import LoginForm from './pages/LoginForm';
+import FullLayout from './layouts/FullLayout';
+import BlankLayout from './layouts/BlankLayout';
 
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/my-profile' element={<Myprofile />} />
-        <Route path='/my-activity' element={<Activity />} />
-        <Route path='/explore' element={<Explore />} />
-        <Route path='/create' element={<Create/>} />
+        <Route path='/' element={<FullLayout><Home /></FullLayout>} />
+        <Route path='/login' element={<BlankLayout><LoginForm /></BlankLayout>} />
+        <Route path='/my-profile' element={<FullLayout><Myprofile /></FullLayout>} />
+        <Route path='/my-activity' element={<FullLayout><Activity /></FullLayout>} />
+        <Route path='/explore' element={<FullLayout><Explore /></FullLayout>} />
+        <Route path='/create' element={<FullLayout><Create /></FullLayout>} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

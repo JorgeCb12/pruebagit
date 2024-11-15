@@ -26,6 +26,7 @@ const Home = () => {
     const explore = () => {
         navigate ("/Explore")
     }
+   
 
     return (
         <div>
