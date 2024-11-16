@@ -1,0 +1,133 @@
+form{
+    background: transparent;
+    padding: 30px 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    width: 40%;
+    margin:  auto ;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 0px #fff;
+  
+    
+  }
+  .form {
+    width: 75%;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  form .grupo {
+    position:relative;
+    padding: 25px 20px;
+    
+    
+  }
+  input{
+    background:none;
+    color: #adacac;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+  }
+  input:focus {
+    outline:none ;
+    color: #8b8787;
+  
+  }
+  label {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    left: 25px;
+    top: -2px;
+    transition: 0.4s ease-in-out all;
+    pointer-events: none;
+    font-weight: 400;
+    
+  
+  }
+  input:focus~label,
+    input:valid~label{
+    top: -20px;
+    font-size: 20px;
+    color: #2196f3;
+    transition: 0.2s ease ;
+  
+  }
+  .barra{
+  position: relative;
+  display: block;
+  width: 103%;
+  }
+  .barra::before {
+    content: "";
+    height: 2.2px;
+    width: 0%;
+    bottom: 0px;
+    position: absolute;
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    transition: 0.5s ease width;
+    left: 0px;
+    
+    
+  }
+  input:focus~.barra::before{
+    width: 97%;
+  }
+  .boton-login{
+    font-family: 'roboto' ;
+  background: transparent;  /* fallback for old browsers */
+  border: 1px solid #fff;
+  display: block;
+  width: 50%;
+  margin:10px auto;
+  color: #ffffff;
+  height: 40px;
+  font-size: 17px;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  cursor: pointer;
+  margin-top: 30px;
+  
+    
+  }
+  .text-login {
+    color:rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+.section-loguin {
+       height: 100vh;
+       display: flex;
+       margin: 0 auto;
+}
+.section-loguin p{
+    color: #969696;
+    font-weight: 200;
+    text-align: center;
+
+}
+.boton-login , .seccion{
+     font-weight: 300;
+ }
+.seccion:hover{
+    background: #ffffff;
+    color: #000;
+    
+}
+.section-form p{
+  font-weight: 200;
+  text-align: center;
+}
+.section-form button{
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  background: transparent;
+  justify-content: center;
+  display: flex;
+}

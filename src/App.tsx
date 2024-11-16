@@ -8,6 +8,7 @@ import Create from './pages/Create';
 import LoginForm from './pages/LoginForm';
 import FullLayout from './layouts/FullLayout';
 import BlankLayout from './layouts/BlankLayout';
+import FormularioForm from './pages/formularioForm';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<FullLayout><Home /></FullLayout>} />
         <Route path='/login' element={<BlankLayout><LoginForm /></BlankLayout>} />
+        <Route path='/formulario' element={<BlankLayout><FormularioForm /></BlankLayout>} />
         <Route path='/my-profile' element={<FullLayout><Myprofile /></FullLayout>} />
         <Route path='/my-activity' element={<FullLayout><Activity /></FullLayout>} />
         <Route path='/explore' element={<FullLayout><Explore /></FullLayout>} />
