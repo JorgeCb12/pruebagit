@@ -16,13 +16,13 @@ const FormularioForm = () => {
                 <i className="fa fa-user fa-1x  " ></i>
                 <input type="text" name="letras" id="name" required/> 
                 <span className="barra"></span>
-                <label htmlFor="">Nombre Completo</label>
+                <label htmlFor="">Nombre:</label>
             </div>
             <div className="grupo">
                 <i className="fa fa-envelope fa-1x "></i>
                 <input type="email" name="" id="name" required/>
                 <span className="barra"></span>
-                <label htmlFor="">Correo electronico</label>
+                <label htmlFor="">Email: </label>
             </div>
             <div className="grupo">
                 <i className="fa fa-key fa-1x" ></i>
