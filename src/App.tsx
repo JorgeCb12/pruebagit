@@ -8,7 +8,7 @@ import Create from './pages/Create';
 import LoginForm from './pages/LoginForm';
 import FullLayout from './layouts/FullLayout';
 import BlankLayout from './layouts/BlankLayout';
-import FormularioForm from './pages/formularioForm';
+import FormularioForm from './pages/FormularioForm';
 
 
 
